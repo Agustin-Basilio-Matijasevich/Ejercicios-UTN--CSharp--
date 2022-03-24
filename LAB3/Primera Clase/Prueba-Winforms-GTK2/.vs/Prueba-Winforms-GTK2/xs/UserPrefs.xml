@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{45AFF931-D6BB-4B15-8955-3C5665178CB6}|Default">
+  <MonoDevelop.Ide.ItemProperties.Prueba-Winforms-GTK2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Prueba-Winforms-GTK2/MainWindow.cs">
+    <Files>
+      <File FileName="Prueba-Winforms-GTK2/Program.cs" Line="1" Column="1" />
+      <File FileName="Prueba-Winforms-GTK2/MainWindow.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Prueba-Winforms-GTK2" expanded="True">
+            <Node name="Prueba-Winforms-GTK2" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
