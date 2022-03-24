@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fecha", "Fecha\Fecha.csproj", "{AA697D3D-7621-4F66-9EE3-699B47C8DBC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA697D3D-7621-4F66-9EE3-699B47C8DBC9}.Debug|x86.ActiveCfg = Debug|x86
+		{AA697D3D-7621-4F66-9EE3-699B47C8DBC9}.Debug|x86.Build.0 = Debug|x86
+		{AA697D3D-7621-4F66-9EE3-699B47C8DBC9}.Release|x86.ActiveCfg = Release|x86
+		{AA697D3D-7621-4F66-9EE3-699B47C8DBC9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
