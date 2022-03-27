@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{249CB177-44B3-4127-AD99-C85535737450}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Prueba_Winforms_nodesigner/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Prueba_Winforms_nodesigner/MainForm.cs">
     <Files>
-      <File FileName="Prueba_Winforms_nodesigner/Program.cs" Line="15" Column="39" />
+      <File FileName="Prueba_Winforms_nodesigner/Program.cs" Line="3" Column="2" />
+      <File FileName="Prueba_Winforms_nodesigner/MainForm.cs" Line="18" Column="86" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +10,7 @@
           <Node name="Prueba_Winforms_nodesigner" expanded="True">
             <Node name="Prueba_Winforms_nodesigner" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="MainForm.cs" selected="True" />
             </Node>
           </Node>
         </State>

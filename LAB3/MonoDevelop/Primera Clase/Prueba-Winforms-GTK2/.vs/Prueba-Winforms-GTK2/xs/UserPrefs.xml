@@ -2,14 +2,15 @@
   <MonoDevelop.Ide.ItemProperties.Prueba-Winforms-GTK2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Prueba-Winforms-GTK2/MainWindow.cs">
     <Files>
-      <File FileName="Prueba-Winforms-GTK2/Program.cs" Line="1" Column="1" />
-      <File FileName="Prueba-Winforms-GTK2/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Prueba-Winforms-GTK2/MainWindow.cs" Line="17" Column="1" />
+      <File FileName="Prueba-Winforms-GTK2/Program.cs" Line="12" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Prueba-Winforms-GTK2" expanded="True">
             <Node name="Prueba-Winforms-GTK2" expanded="True">
+              <Node name="UserInterface" expanded="True" />
               <Node name="MainWindow.cs" selected="True" />
             </Node>
           </Node>
