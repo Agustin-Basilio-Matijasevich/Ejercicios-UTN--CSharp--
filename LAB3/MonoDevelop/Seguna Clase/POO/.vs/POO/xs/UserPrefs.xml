@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Activo.cs">
+    <Files>
+      <File FileName="Cajero/Program.cs" Line="11" Column="17" />
+      <File FileName="Cajero/personaInterfase.cs" Line="8" Column="25" />
+      <File FileName="Cajero/UsuarioInterface.cs" Line="8" Column="45" />
+      <File FileName="Cajero/Persona.cs" Line="7" Column="42" />
+      <File FileName="Cajero/Jubilado.cs" Line="35" Column="10" />
+      <File FileName="Cajero/Activo.cs" Line="19" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="POO" expanded="True">
+            <Node name="Cajero" expanded="True">
+              <Node name="Activo.cs" selected="True" />
+            </Node>
+            <Node name="POO" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.POO PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

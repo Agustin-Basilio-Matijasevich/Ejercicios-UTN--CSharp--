@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{F2F828C0-7DCC-4AA8-BCB1-5B54CFFDE006}|Default">
+  <MonoDevelop.Ide.ItemProperties.CeroAlCien PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Practicos_Sencillos" expanded="True">
+            <Node name="CeroAlCien" expanded="True" />
+            <Node name="Presupuesto" expanded="True" />
+            <Node name="PrimerDMesUnaFecha" expanded="True">
+              <Node name="PrimerDMesUnaFecha.cs" selected="True" />
+            </Node>
+            <Node name="QueDiaCaeMismoAño" expanded="True" />
+            <Node name="Tabla" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PrimerDMesUnaFecha PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.QueDiaCaeMismoAño PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Presupuesto PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

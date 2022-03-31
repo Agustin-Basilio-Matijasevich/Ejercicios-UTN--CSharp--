@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO", "POO\POO.csproj", "{77740641-FBF4-4976-971C-9308CDE135F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cajero", "Cajero\Cajero.csproj", "{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77740641-FBF4-4976-971C-9308CDE135F5}.Debug|x86.ActiveCfg = Debug|x86
+		{77740641-FBF4-4976-971C-9308CDE135F5}.Debug|x86.Build.0 = Debug|x86
+		{77740641-FBF4-4976-971C-9308CDE135F5}.Release|x86.ActiveCfg = Release|x86
+		{77740641-FBF4-4976-971C-9308CDE135F5}.Release|x86.Build.0 = Release|x86
+		{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}.Debug|x86.ActiveCfg = Debug|x86
+		{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}.Debug|x86.Build.0 = Debug|x86
+		{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}.Release|x86.ActiveCfg = Release|x86
+		{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
