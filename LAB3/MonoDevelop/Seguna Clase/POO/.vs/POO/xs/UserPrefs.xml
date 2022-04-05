@@ -7,7 +7,7 @@
       <File FileName="Cajero/UsuarioInterface.cs" Line="8" Column="45" />
       <File FileName="Cajero/Persona.cs" Line="7" Column="42" />
       <File FileName="Cajero/Jubilado.cs" Line="35" Column="10" />
-      <File FileName="Cajero/Activo.cs" Line="19" Column="13" />
+      <File FileName="Cajero/Activo.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{F2F828C0-7DCC-4AA8-BCB1-5B54CFFDE006}|Default">
+  <MonoDevelop.Ide.ItemProperties.Tabla PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.CeroAlCien PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Practicos_Sencillos" expanded="True">
-            <Node name="CeroAlCien" expanded="True" />
-            <Node name="Presupuesto" expanded="True" />
-            <Node name="PrimerDMesUnaFecha" expanded="True">
-              <Node name="PrimerDMesUnaFecha.cs" selected="True" />
+            <Node name="CeroAlCien" expanded="True">
+              <Node name="CeroAlCien.cs" selected="True" />
             </Node>
+            <Node name="Presupuesto" expanded="True" />
+            <Node name="PrimerDMesUnaFecha" expanded="True" />
             <Node name="QueDiaCaeMismoAño" expanded="True" />
             <Node name="Tabla" expanded="True" />
           </Node>
