@@ -1,22 +1,22 @@
-﻿<Properties StartupConfiguration="{A379D9DC-380D-44EE-928A-EDD2E9E360B8}|Default">
+﻿<Properties StartupConfiguration="{DD7DF25E-F836-4DE4-8F42-3A7CD4A4AB04}|Default">
   <MonoDevelop.Ide.ItemProperties.CursorMoves PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Primer_Clase/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Texto/Program.cs">
     <Files>
-      <File FileName="Primer_Clase/Program.cs" Line="21" Column="13" />
+      <File FileName="Texto/Program.cs" Line="40" Column="73" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Primer_Clase" expanded="True">
             <Node name="CursorMoves" expanded="True" />
-            <Node name="OperacionesBasicas" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="OperacionesBasicas" expanded="True" />
+            <Node name="Texto" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Texto PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.OperacionesBasicas PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
