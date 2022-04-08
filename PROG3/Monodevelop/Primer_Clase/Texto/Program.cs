@@ -19,9 +19,9 @@ namespace Texto
             do
             {
                 Console.WriteLine("\n\nSeleccione una opcion.");
-                Console.WriteLine("Ingrese a para: Mostrar Texto en Mayusculas");
-                Console.WriteLine("Ingrese b para: Mostrar Texto en Minusculas");
-                Console.WriteLine("Ingrese c para: Mostrar Texto Original");
+                Console.WriteLine("Ingrese A para: Mostrar Texto en Mayusculas");
+                Console.WriteLine("Ingrese B para: Mostrar Texto en Minusculas");
+                Console.WriteLine("Ingrese C para: Mostrar Texto Original");
 
                 opcion = Console.ReadKey();
 
@@ -29,7 +29,7 @@ namespace Texto
                 {
                     case ConsoleKey.A:
                         {
-                            Console.WriteLine(Texto.ToUpper());
+                            Console.WriteLine("\n\n" + Texto.ToUpper());
 
                             flag = false;
                             break;
@@ -37,7 +37,7 @@ namespace Texto
 
                     case ConsoleKey.B:
                         {
-                            Console.WriteLine(Texto.ToLower());
+                            Console.WriteLine("\n\n" + Texto.ToLower());
 
                             flag = false;
                             break;
@@ -45,7 +45,7 @@ namespace Texto
 
                     case ConsoleKey.C:
                         {
-                            Console.WriteLine(Texto);
+                            Console.WriteLine("\n\n" + Texto);
 
                             flag = false;
                             break;
