@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
   <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Activo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Persona.cs">
     <Files>
       <File FileName="Cajero/Program.cs" Line="11" Column="17" />
       <File FileName="Cajero/personaInterfase.cs" Line="8" Column="25" />
@@ -14,7 +14,7 @@
         <State name="__root__">
           <Node name="POO" expanded="True">
             <Node name="Cajero" expanded="True">
-              <Node name="Activo.cs" selected="True" />
+              <Node name="Persona.cs" selected="True" />
             </Node>
             <Node name="POO" expanded="True" />
           </Node>

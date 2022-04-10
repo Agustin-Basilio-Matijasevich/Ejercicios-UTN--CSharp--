@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.CursorMoves PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Texto/Program.cs">
     <Files>
-      <File FileName="Texto/Program.cs" Line="25" Column="17" />
+      <File FileName="Texto/Program.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +10,9 @@
           <Node name="Primer_Clase" expanded="True">
             <Node name="CursorMoves" expanded="True" />
             <Node name="OperacionesBasicas" expanded="True" />
-            <Node name="Texto" expanded="True" selected="True" />
+            <Node name="Texto" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
