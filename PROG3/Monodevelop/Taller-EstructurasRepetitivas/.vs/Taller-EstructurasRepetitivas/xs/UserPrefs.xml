@@ -1,20 +1,11 @@
 ﻿<Properties StartupConfiguration="{A7AA2ECA-3906-46D7-9947-29A841213158}|Default">
   <MonoDevelop.Ide.ItemProperties.Taller-EstructurasRepetitivas PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Taller-EstructurasRepetitivas/Program.cs">
-    <Files>
-      <File FileName="Taller-EstructurasRepetitivas/Program.cs" Line="42" Column="122" />
-      <File FileName="Taller-EstructurasRepetitivas/Tools/ADecimalPrinter.cs" Line="17" Column="17" />
-      <File FileName="Taller-EstructurasRepetitivas/Tools/DesviacionEstandarDecimal.cs" Line="10" Column="58" />
-      <File FileName="Taller-EstructurasRepetitivas/Tools/VarianzaDecimal.cs" Line="28" Column="42" />
-      <File FileName="Taller-EstructurasRepetitivas/Tools/Sqrtd.cs" Line="11" Column="71" />
-      <File FileName="Taller-EstructurasRepetitivas/Tools/Promedio.cs" Line="18" Column="26" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Taller-EstructurasRepetitivas" expanded="True">
             <Node name="Taller-EstructurasRepetitivas" expanded="True">
-              <Node name="Tools" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>

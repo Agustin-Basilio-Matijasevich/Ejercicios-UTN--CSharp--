@@ -35,10 +35,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ADecimalPrinter.cs" />
-    <Compile Include="Tools\DesviacionEstandarDecimal.cs" />
-    <Compile Include="Tools\VarianzaDecimal.cs" />
-    <Compile Include="Tools\Sqrtd.cs" />
-    <Compile Include="Tools\Promedio.cs" />
+    <Compile Include="Tools\Math.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tools\" />

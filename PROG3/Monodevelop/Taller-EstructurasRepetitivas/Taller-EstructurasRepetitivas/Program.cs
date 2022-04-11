@@ -9,7 +9,7 @@ namespace TallerEstructurasRepetitivas
         {
             Console.WriteLine("--Desviacion Estandar Prog3 Por Agustin Basilio--\n\n");
 
-            Decimal[] Personas = new decimal[5];
+            Decimal[] Personas = new decimal[10];
             decimal DesviacionE, Media;
 
             //Carga del array
@@ -27,10 +27,10 @@ namespace TallerEstructurasRepetitivas
             }
 
             //Calculo de la Media
-            Media = Promedio.Prom(Personas);
+            Media = Tools.Math.Promedio(Personas);
 
             //Calculo Desviacion Estandar
-            DesviacionE = DesviacionEstandarDecimal.DesviacionEstandar(Personas);
+            DesviacionE = Tools.Math.DesviacionEstandar(Personas);
 
             //Presentacion de Resultados
             Console.WriteLine("--Alturas Obtenidas--\n\n");
