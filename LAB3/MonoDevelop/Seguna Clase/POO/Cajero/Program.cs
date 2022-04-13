@@ -30,10 +30,29 @@ namespace Cajero
                 //Variables
                 string DNI, index = null;
 
-                //Buscador
-                Console.Write("Ingrese su DNI: ");
-                DNI = Console.ReadLine();
+                do //Validacion del DNI
+                {
+                    bool Bandera1, Bandera2;
 
+                    Console.Write("Ingrese su DNI: ");
+                    DNI = Console.ReadLine();
+
+                    Bandera1 = int.TryParse(DNI, out int aux);
+
+                    Bandera2 = (DNI.Length >= 8);
+
+                    if (Bandera1 && Bandera2)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("DNI no Valido\n\n");
+                    }
+
+                } while (true);
+
+                //Buscador
                 for (int i = 0; i < Personas.Count; i++)
                 {
                     if (DNI.Equals((Personas[i].GetDNI())))
@@ -52,84 +71,30 @@ namespace Cajero
                     {
                         //Registro
                         ConsoleKeyInfo opcion;
-                        Console.WriteLine("\n\nSi es usted Activo Presione A\nSi es usted Jubilado Presione J");
+                        Console.WriteLine("\n\nSi es usted Activo Presione A\nSi es usted Jubilado Presione J\nPresione cualquier otra tecla para CANCELAR");
                         opcion = Console.ReadKey();
 
                         if (opcion.Key == ConsoleKey.A)
                         {
-                            string Nombre;
-
-                            Console.WriteLine("\n\nIngrese su nombre completo: ");
-                            Nombre = Console.ReadLine();
-
-                            Console.WriteLine("\n\n¿Desea realizar un Deposito incial? Presione S para SI");
-
-                            if (Console.ReadKey().Key == ConsoleKey.S)
-                            {
-                                decimal Deposito;
-                                bool Bandera;
-
-
-                                Console.WriteLine("\nIngrese el Deposito: ");
-
-                                do
-                                {
-                                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
-                                } while (!Bandera);
-
-
-                                Personas.Add(new Activo(Nombre, DNI, Deposito));
-
-                            }
-                            else
-                            {
-                                Personas.Add(new Activo(Nombre, DNI));
-                            }
+                            AddActivo(DNI, Personas);
 
                             Console.WriteLine("\n\n***Usuario Activo creado CORRECTAMENTE***\n\n");
-                            Console.WriteLine("\n\n***Presione una tecla para continuar***\n\n");
+                            Console.Write("Presione una tecla Para continuar...");
                             Console.ReadKey();
                         }
                         else if (opcion.Key == ConsoleKey.J)
                         {
-                            string Nombre;
-
-                            Console.WriteLine("\n\nIngrese su nombre completo: ");
-                            Nombre = Console.ReadLine();
-
-                            Console.WriteLine("\n\n¿Desea realizar un Deposito incial? Presione S para SI");
-
-                            if (Console.ReadKey().Key == ConsoleKey.S)
-                            {
-                                decimal Deposito;
-                                bool Bandera;
-
-
-                                Console.WriteLine("\nIngrese el Deposito: ");
-
-                                do
-                                {
-                                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
-                                } while (!Bandera);
-
-
-                                Personas.Add(new Activo(Nombre, DNI, Deposito));
-
-                            }
-                            else
-                            {
-                                Personas.Add(new Activo(Nombre, DNI));
-                            }
+                            AddJubilado(DNI, Personas);
 
                             Console.WriteLine("\n\n***Usuario Jubilado creado CORRECTAMENTE***\n\n");
-                            Console.WriteLine("\n\n***Presione una tecla para continuar***\n\n");
+                            Console.Write("Presione una tecla Para continuar...");
                             Console.ReadKey();
                         }
 
                     }
 
                 }
-                else //Esto ejecuta cuando te encuentra en base de datos. Codigo Principal.
+                else //Esto ejecuta cuando te encuentra en base de datos. Menu Principal.
                 {
                     dynamic UsuarioActual;
 
@@ -142,7 +107,11 @@ namespace Cajero
                         UsuarioActual = (Jubilado)Personas[int.Parse(index)];
                     }
 
+                    MenuPUsuario(Personas, ID, int.Parse(index), UsuarioActual);
 
+                    Console.WriteLine("\n\n***Gracias, Vuelva Prontos***\n\n");
+                    Console.Write("Presione una tecla Para continuar...");
+                    Console.ReadKey();
 
                 }
 
@@ -151,5 +120,217 @@ namespace Cajero
             } while (true);
 
         }
+
+        private static void AddActivo(string DNI, List<Persona> Personas)
+        {
+            string Nombre;
+
+            do
+            {
+                Console.WriteLine("\n\nIngrese su nombre completo: ");
+                Nombre = Console.ReadLine();
+
+                if (!(Nombre.Length < 1))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("El Nombre no puede estar vacio\n\n");
+                }
+
+            } while (true);
+
+            Console.WriteLine("\n\n¿Desea realizar un Deposito incial?\nPresione S para SI\nPresione cualquier otra tecla para NO");
+
+            if (Console.ReadKey().Key == ConsoleKey.S)
+            {
+                decimal Deposito;
+                bool Bandera;
+
+
+                Console.WriteLine("\nIngrese el Deposito: ");
+
+                do
+                {
+                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
+
+                    if (Bandera && !(Deposito == 0))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Deposito Invalido, reintente\n\n");
+                    }
+
+                } while (true);
+
+
+                Personas.Add(new Activo(Nombre, DNI, Deposito));
+
+            }
+            else
+            {
+                Personas.Add(new Activo(Nombre, DNI));
+            }
+
+        }
+
+        private static void AddJubilado(string DNI, List<Persona> Personas)
+        {
+            string Nombre;
+
+            do
+            {
+                Console.WriteLine("\n\nIngrese su nombre completo: ");
+                Nombre = Console.ReadLine();
+
+                if (!(Nombre.Length < 1))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("El Nombre no puede estar vacio\n\n");
+                }
+
+            } while (true);
+
+            Console.WriteLine("\n\n¿Desea realizar un Deposito incial?\nPresione S para SI\nPresione cualquier otra tecla para NO");
+
+            if (Console.ReadKey().Key == ConsoleKey.S)
+            {
+                decimal Deposito;
+                bool Bandera;
+
+
+                Console.WriteLine("\nIngrese el Deposito: ");
+
+                do
+                {
+                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
+
+                    if (Bandera && !(Deposito == 0))
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Deposito Invalido, reintente\n\n");
+                    }
+
+                } while (true);
+
+
+                Personas.Add(new Jubilado(Nombre, DNI, Deposito));
+
+            }
+            else
+            {
+                Personas.Add(new Jubilado(Nombre, DNI));
+            }
+
+        }
+
+        private static void MenuPUsuario(List<Persona> Personas, IDCaj ID, int index, dynamic UsuarioActual)
+        {
+            bool Bandera = true;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("***Bienvenido a Banco Basilio***\n\n");
+
+                //Bienvenida
+                Console.WriteLine($"Es un placer verlo nuevamente señor: {UsuarioActual.GetNombre()}");
+                Console.WriteLine($"Saldo: ${UsuarioActual.GetDinero()}");
+                Console.WriteLine($"Deudas: ${UsuarioActual.GetDeuda()}");
+                if (UsuarioActual is Activo)
+                {
+                    Console.WriteLine("***Cuenta de Activo***");
+                }
+                else if (UsuarioActual is Jubilado)
+                {
+                    Console.WriteLine("***Cuenta de Jubilado***");
+                }
+
+                //Menu
+                Console.Write("\n\n***Menu Principal***\n\n");
+                Console.WriteLine("Presione 1 para Depositar dinero");
+                Console.WriteLine("Presione 2 para Retirar dinero");
+                Console.WriteLine("Presione 3 para Solicitar un adelanto de sueldo");
+                Console.WriteLine("Presione 4 para Saldar todas sus Deudas");
+                Console.WriteLine("Presione 5 para Solicitar TODOS los registros de transaccion");
+                Console.WriteLine("Presione S para SALIR");
+
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.D1:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.NumPad1:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.D2:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.NumPad2:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.D3:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.NumPad3:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.D4:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.NumPad4:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.D5:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.NumPad5:
+                        {
+                            break;
+                        }
+
+                    case ConsoleKey.S:
+                        {
+                            Bandera = false;
+                            break;
+                        }
+
+                    default:
+                        {
+                            break;
+                        }
+
+                }
+
+            } while (Bandera);
+        }
+
     }
 }
