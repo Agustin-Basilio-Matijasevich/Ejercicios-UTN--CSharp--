@@ -34,11 +34,21 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="personaInterfase.cs" />
-    <Compile Include="Persona.cs" />
-    <Compile Include="Jubilado.cs" />
-    <Compile Include="Activo.cs" />
-    <Compile Include="UsuarioInterface.cs" />
+    <Compile Include="Elements\Abstracts\Persona.cs" />
+    <Compile Include="Elements\Interfaces\personaInterfase.cs" />
+    <Compile Include="Elements\Interfaces\UsuarioInterface.cs" />
+    <Compile Include="Elements\Usuarios\Activo.cs" />
+    <Compile Include="Elements\Usuarios\Jubilado.cs" />
+    <Compile Include="Elements\Tools\RegOP.cs" />
+    <Compile Include="Elements\Tools\IDCaj.cs" />
+    <Compile Include="Elements\Tools\Credito.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Elements\" />
+    <Folder Include="Elements\Abstracts\" />
+    <Folder Include="Elements\Interfaces\" />
+    <Folder Include="Elements\Usuarios\" />
+    <Folder Include="Elements\Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

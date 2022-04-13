@@ -1,20 +1,30 @@
 ﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
   <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Persona.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Elements/Tools/Credito.cs">
     <Files>
-      <File FileName="Cajero/Program.cs" Line="11" Column="17" />
-      <File FileName="Cajero/personaInterfase.cs" Line="8" Column="25" />
-      <File FileName="Cajero/UsuarioInterface.cs" Line="8" Column="45" />
-      <File FileName="Cajero/Persona.cs" Line="7" Column="42" />
-      <File FileName="Cajero/Jubilado.cs" Line="35" Column="10" />
-      <File FileName="Cajero/Activo.cs" Line="19" Column="1" />
+      <File FileName="Cajero/Program.cs" Line="11" Column="10" />
+      <File FileName="Cajero/Elements/Usuarios/Activo.cs" Line="3" Column="26" />
+      <File FileName="Cajero/Elements/Usuarios/Jubilado.cs" Line="48" Column="13" />
+      <File FileName="Cajero/Elements/Abstracts/Persona.cs" Line="11" Column="33" />
+      <File FileName="Cajero/Elements/Interfaces/UsuarioInterface.cs" Line="8" Column="49" />
+      <File FileName="Cajero/Elements/Interfaces/personaInterfase.cs" Line="8" Column="28" />
+      <File FileName="Cajero/Elements/Tools/RegOP.cs" Line="40" Column="10" />
+      <File FileName="Cajero/Elements/Tools/IDCaj.cs" Line="16" Column="87" />
+      <File FileName="Cajero/Elements/Tools/Credito.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="POO" expanded="True">
             <Node name="Cajero" expanded="True">
-              <Node name="Persona.cs" selected="True" />
+              <Node name="Elements" expanded="True">
+                <Node name="Abstracts" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Tools" expanded="True">
+                  <Node name="Credito.cs" selected="True" />
+                </Node>
+                <Node name="Usuarios" expanded="True" />
+              </Node>
             </Node>
             <Node name="POO" expanded="True" />
           </Node>

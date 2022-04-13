@@ -6,7 +6,9 @@
         <State name="__root__">
           <Node name="Taller-EstructurasRepetitivas" expanded="True">
             <Node name="Taller-EstructurasRepetitivas" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Tools" expanded="True">
+                <Node name="Math.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
