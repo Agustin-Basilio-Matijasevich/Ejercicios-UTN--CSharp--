@@ -324,6 +324,9 @@ namespace Cajero
 
                     default:
                         {
+                            Console.Clear();
+                            Console.WriteLine("\n\n***Opcion Invalida.\nPresione una tecla para continuar...***\n\n");
+                            Console.ReadKey();
                             break;
                         }
 
