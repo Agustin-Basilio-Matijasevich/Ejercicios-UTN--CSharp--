@@ -16,5 +16,11 @@ namespace Primer_App_Winforms_Framework
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.Text = "Hola MUndo";
+
+        }
     }
 }
