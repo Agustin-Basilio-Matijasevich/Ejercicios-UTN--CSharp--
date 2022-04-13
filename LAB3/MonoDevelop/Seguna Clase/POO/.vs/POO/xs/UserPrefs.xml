@@ -1,28 +1,27 @@
 ﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
   <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Elements/Tools/Credito.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Program.cs">
     <Files>
-      <File FileName="Cajero/Program.cs" Line="11" Column="10" />
-      <File FileName="Cajero/Elements/Usuarios/Activo.cs" Line="3" Column="26" />
-      <File FileName="Cajero/Elements/Usuarios/Jubilado.cs" Line="48" Column="13" />
-      <File FileName="Cajero/Elements/Abstracts/Persona.cs" Line="11" Column="33" />
-      <File FileName="Cajero/Elements/Interfaces/UsuarioInterface.cs" Line="8" Column="49" />
-      <File FileName="Cajero/Elements/Interfaces/personaInterfase.cs" Line="8" Column="28" />
+      <File FileName="Cajero/Program.cs" Line="145" Column="21" />
+      <File FileName="Cajero/Elements/Usuarios/Activo.cs" Line="41" Column="48" />
+      <File FileName="Cajero/Elements/Usuarios/Jubilado.cs" Line="84" Column="10" />
+      <File FileName="Cajero/Elements/Abstracts/Persona.cs" Line="117" Column="10" />
+      <File FileName="Cajero/Elements/Interfaces/UsuarioInterface.cs" Line="5" Column="54" />
+      <File FileName="Cajero/Elements/Interfaces/personaInterfase.cs" Line="13" Column="9" />
       <File FileName="Cajero/Elements/Tools/RegOP.cs" Line="40" Column="10" />
       <File FileName="Cajero/Elements/Tools/IDCaj.cs" Line="16" Column="87" />
-      <File FileName="Cajero/Elements/Tools/Credito.cs" Line="1" Column="1" />
+      <File FileName="Cajero/Elements/Tools/Credito.cs" Line="78" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="POO" expanded="True">
             <Node name="Cajero" expanded="True">
+              <Node name="References" selected="True" />
               <Node name="Elements" expanded="True">
                 <Node name="Abstracts" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
-                <Node name="Tools" expanded="True">
-                  <Node name="Credito.cs" selected="True" />
-                </Node>
+                <Node name="Tools" expanded="True" />
                 <Node name="Usuarios" expanded="True" />
               </Node>
             </Node>

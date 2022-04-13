@@ -67,9 +67,16 @@ namespace Cajero
                             if (Console.ReadKey().Key == ConsoleKey.S)
                             {
                                 decimal Deposito;
+                                bool Bandera;
+
 
                                 Console.WriteLine("\nIngrese el Deposito: ");
-                                Deposito = decimal.Parse(Console.ReadLine());
+
+                                do
+                                {
+                                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
+                                } while (!Bandera);
+
 
                                 Personas.Add(new Activo(Nombre, DNI, Deposito));
 
@@ -95,9 +102,16 @@ namespace Cajero
                             if (Console.ReadKey().Key == ConsoleKey.S)
                             {
                                 decimal Deposito;
+                                bool Bandera;
+
 
                                 Console.WriteLine("\nIngrese el Deposito: ");
-                                Deposito = decimal.Parse(Console.ReadLine());
+
+                                do
+                                {
+                                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
+                                } while (!Bandera);
+
 
                                 Personas.Add(new Activo(Nombre, DNI, Deposito));
 
@@ -117,6 +131,18 @@ namespace Cajero
                 }
                 else //Esto ejecuta cuando te encuentra en base de datos. Codigo Principal.
                 {
+                    dynamic UsuarioActual;
+
+                    if (Personas[int.Parse(index)] is Activo)
+                    {
+                        UsuarioActual = (Activo)Personas[int.Parse(index)];
+                    }
+                    else
+                    {
+                        UsuarioActual = (Jubilado)Personas[int.Parse(index)];
+                    }
+
+
 
                 }
 
