@@ -260,21 +260,29 @@ namespace Cajero
 
                     case ConsoleKey.D3:
                         {
+                            SolicitarAdelanto(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.NumPad3:
                         {
+                            SolicitarAdelanto(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.D4:
                         {
+                            SaldarDeudas(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.NumPad4:
                         {
+                            SaldarDeudas(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
@@ -355,12 +363,54 @@ namespace Cajero
 
         private static void SolicitarAdelanto(IDCaj ID, dynamic UsuarioActual)
         {
+            decimal Monto;
+            bool Exito;
 
+            Console.Clear();
+            Console.WriteLine("***Bienvenido a Banco Basilio***\n\n");
+
+            Monto = GetMonto();
+
+            Exito = UsuarioActual.PedirAdelanto(Monto, ID);
+
+            if (!Exito)
+            {
+                Console.WriteLine($"***Se le ha Otorgado un Adelando de Sueldo***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("***No se le Pudo Otorgar Un Adelanto de Sueldo***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
         }
 
         private static void SaldarDeudas(IDCaj ID, dynamic UsuarioActual)
         {
+            decimal Monto;
+            bool Exito;
 
+            Console.Clear();
+            Console.WriteLine("***Bienvenido a Banco Basilio***\n\n");
+
+            Monto = GetMonto();
+
+            Exito = UsuarioActual.SaldarDeuda(Monto, ID);
+
+            if (!Exito)
+            {
+                Console.WriteLine($"***Deuda Saldada por un monto total de ${Monto}***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("***No se Pudo Saldar la Deuda***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
         }
 
         private static void SolicitarRegistros(dynamic UsuarioActual)

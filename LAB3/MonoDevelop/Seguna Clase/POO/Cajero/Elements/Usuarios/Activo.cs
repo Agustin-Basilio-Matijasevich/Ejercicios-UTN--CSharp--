@@ -32,7 +32,8 @@ namespace Cajero.Elements
                 {
                     //Dar Credito
 
-
+                    this.Deuda += 80000;
+                    this.Dinero += 80000;
 
                     return false;
                 }
@@ -42,9 +43,10 @@ namespace Cajero.Elements
                     {
                         //Dar adelanto
                         this.Deuda += Dinero;
+                        this.Dinero += Dinero;
 
                         //Generar Registro
-                        Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+                        Registros.Add(new RegOP(ID, DateTime.Now, "Adelanto de Sueldo", Dinero, this.Dinero, this.Deuda));
 
                         return false;
                     }
@@ -61,21 +63,22 @@ namespace Cajero.Elements
             {
                 Console.WriteLine("\n\n***Adelanto de Sueldo***\n\n");
                 Console.WriteLine($"Usted actualmente debe ${Deuda}");
-                Console.WriteLine($"Usted como Jubilado puede solicitar adelantos por un maximo de $10000");
+                Console.WriteLine($"Usted como Activo puede solicitar adelantos por un maximo de $20000");
 
-                if (Dinero + Deuda <= 10000)
+                if (Dinero + Deuda <= 20000)
                 {
                     //Dar adelanto
                     this.Deuda += Dinero;
+                    this.Dinero += Dinero;
 
                     //Generar Registro
-                    Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+                    Registros.Add(new RegOP(ID, DateTime.Now, "Adelanto de Sueldo", Dinero, this.Dinero, this.Deuda));
 
                     return false;
                 }
                 else
                 {
-                    Console.WriteLine("\n\n***Usted No puede contraer tanta deuda\n\n***");
+                    Console.WriteLine("\n\n***Usted No puede contraer tanta deuda***\n\n");
                     return true;
                 }
 

@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return ($"Numero de Cajero: {Numero} / Direccion de Cajero: {Direccion}");
+            return ($"Numero de Cajero: {Numero} -/- Direccion de Cajero: {Direccion}");
         }
 
     }

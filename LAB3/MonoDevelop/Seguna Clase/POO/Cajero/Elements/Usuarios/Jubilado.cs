@@ -32,7 +32,8 @@ namespace Cajero.Elements
                 {
                     //Dar Credito
 
-
+                    this.Deuda += 80000;
+                    this.Dinero += 80000;
 
                     return false;
                 }
@@ -42,9 +43,10 @@ namespace Cajero.Elements
                     {
                         //Dar adelanto
                         this.Deuda += Dinero;
+                        this.Dinero += Dinero;
 
                         //Generar Registro
-                        Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+                        Registros.Add(new RegOP(ID, DateTime.Now, "Adelanto de Sueldo", Dinero, this.Dinero, this.Deuda));
 
                         return false;
                     }
@@ -67,15 +69,16 @@ namespace Cajero.Elements
                 {
                     //Dar adelanto
                     this.Deuda += Dinero;
+                    this.Dinero += Dinero;
 
                     //Generar Registro
-                    Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+                    Registros.Add(new RegOP(ID, DateTime.Now, "Adelanto de Sueldo", Dinero, this.Dinero, this.Deuda));
 
                     return false;
                 }
                 else
                 {
-                    Console.WriteLine("\n\n***Usted No puede contraer tanta deuda\n\n***");
+                    Console.WriteLine("\n\n***Usted No puede contraer tanta deuda***\n\n");
                     return true;
                 }
 

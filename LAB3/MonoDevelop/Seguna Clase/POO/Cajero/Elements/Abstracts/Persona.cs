@@ -64,7 +64,7 @@ namespace Cajero.Elements
                 this.Dinero -= Dinero;
 
                 //Generar Registro
-                Registros.Add(new RegOP(ID, DateTime.Now, Dinero * -1, this.Dinero, this.Deuda));
+                Registros.Add(new RegOP(ID, DateTime.Now, "Retiro", Dinero * -1, this.Dinero, this.Deuda));
 
                 return false;
             }
@@ -80,7 +80,7 @@ namespace Cajero.Elements
             this.Dinero += Dinero;
 
             //Generar Registro
-            Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+            Registros.Add(new RegOP(ID, DateTime.Now, "Deposito", Dinero, this.Dinero, this.Deuda));
 
             return false;
         }
@@ -98,7 +98,7 @@ namespace Cajero.Elements
                     this.Dinero -= Dinero;
 
                     //Generar Registro
-                    Registros.Add(new RegOP(ID, DateTime.Now, Dinero, this.Dinero, this.Deuda));
+                    Registros.Add(new RegOP(ID, DateTime.Now, "Cancelacion de Deuda", Dinero, this.Dinero, this.Deuda));
 
                     return false;
                 }
