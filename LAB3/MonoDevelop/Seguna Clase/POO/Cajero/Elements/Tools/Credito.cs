@@ -46,6 +46,7 @@ namespace Cajero.Elements
                         if (regs[i].GetDinero() > 20000)
                         {
                             Bandera1 = true;
+                            Bandera2 = true;
                         }
                         else
                         {

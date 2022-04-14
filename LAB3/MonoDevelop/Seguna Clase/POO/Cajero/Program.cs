@@ -146,26 +146,8 @@ namespace Cajero
             if (Console.ReadKey().Key == ConsoleKey.S)
             {
                 decimal Deposito;
-                bool Bandera;
 
-
-                Console.WriteLine("\nIngrese el Deposito: ");
-
-                do
-                {
-                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
-
-                    if (Bandera && !(Deposito == 0))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Deposito Invalido, reintente\n\n");
-                    }
-
-                } while (true);
-
+                Deposito = GetMonto();
 
                 Personas.Add(new Activo(Nombre, DNI, Deposito));
 
@@ -202,26 +184,8 @@ namespace Cajero
             if (Console.ReadKey().Key == ConsoleKey.S)
             {
                 decimal Deposito;
-                bool Bandera;
 
-
-                Console.WriteLine("\nIngrese el Deposito: ");
-
-                do
-                {
-                    Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
-
-                    if (Bandera && !(Deposito == 0))
-                    {
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Deposito Invalido, reintente\n\n");
-                    }
-
-                } while (true);
-
+                Deposito = GetMonto();
 
                 Personas.Add(new Jubilado(Nombre, DNI, Deposito));
 
@@ -268,21 +232,29 @@ namespace Cajero
                 {
                     case ConsoleKey.D1:
                         {
+                            DepositarDinero(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.NumPad1:
                         {
+                            DepositarDinero(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.D2:
                         {
+                            RetirarDinero(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
                     case ConsoleKey.NumPad2:
                         {
+                            RetirarDinero(ID, UsuarioActual);
+                            //Aca deberia producirse un impacto en la base de datos
                             break;
                         }
 
@@ -308,11 +280,13 @@ namespace Cajero
 
                     case ConsoleKey.D5:
                         {
+                            SolicitarRegistros(UsuarioActual);
                             break;
                         }
 
                     case ConsoleKey.NumPad5:
                         {
+                            SolicitarRegistros(UsuarioActual);
                             break;
                         }
 
@@ -333,6 +307,96 @@ namespace Cajero
                 }
 
             } while (Bandera);
+        }
+
+        private static void DepositarDinero(IDCaj ID, dynamic UsuarioActual)
+        {
+            decimal Deposito;
+
+            Console.Clear();
+            Console.WriteLine("***Bienvenido a Banco Basilio***\n\n");
+
+            Deposito = GetMonto();
+
+            UsuarioActual.DepositarDinero(Deposito, ID);
+
+            Console.WriteLine("***Deposito Exitoso***\n\n");
+            Console.Write("Presione una tecla Para continuar...");
+            Console.ReadKey();
+
+        }
+
+        private static void RetirarDinero(IDCaj ID, dynamic UsuarioActual)
+        {
+            decimal Retiro;
+            bool Exito;
+
+            Console.Clear();
+            Console.WriteLine("***Bienvenido a Banco Basilio***\n\n");
+
+            Retiro = GetMonto();
+
+            Exito = UsuarioActual.RetirarDinero(Retiro, ID);
+
+            if (!Exito)
+            {
+                Console.WriteLine("***Retiro Exitoso***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("***Retiro Fallido***\n\n");
+                Console.Write("Presione una tecla Para continuar...");
+                Console.ReadKey();
+            }
+
+        }
+
+        private static void SolicitarAdelanto(IDCaj ID, dynamic UsuarioActual)
+        {
+
+        }
+
+        private static void SaldarDeudas(IDCaj ID, dynamic UsuarioActual)
+        {
+
+        }
+
+        private static void SolicitarRegistros(dynamic UsuarioActual)
+        {
+            Console.Clear();
+            UsuarioActual.GetRegistros();
+            Console.Write("Presione una tecla Para continuar...");
+            Console.ReadKey();
+
+        }
+
+        private static decimal GetMonto()
+        {
+            decimal Deposito;
+            bool Bandera;
+
+
+            Console.WriteLine("\nIngrese el Monto: ");
+
+            do
+            {
+                Bandera = decimal.TryParse(Console.ReadLine(), out Deposito);
+
+                if (Bandera && !(Deposito <= 0))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Deposito Invalido, reintente\n\n");
+                }
+
+            } while (true);
+
+            return Deposito;
+
         }
 
     }
