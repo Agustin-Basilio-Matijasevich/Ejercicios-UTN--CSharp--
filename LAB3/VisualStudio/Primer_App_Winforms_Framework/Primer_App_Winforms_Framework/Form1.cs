@@ -17,10 +17,36 @@ namespace Primer_App_Winforms_Framework
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnSaludo_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Hola MUndo";
+            lblSaludo.Text = "Qnda Prro";
+            imgApretame.Visible = false;
+            imgHolis.Visible = true;
+            btnExit.Visible = true;
+        }
 
+        private void btnSaludo_MouseEnter(object sender, EventArgs e)
+        {
+            lblSaludo.Text = "Apretame PTO";
+            imgApretame.Visible = true;
+        }
+
+        private void btnSaludo_MouseLeave(object sender, EventArgs e)
+        {
+            lblSaludo.Text = "";
+            imgApretame.Visible = false;
+            imgHolis.Visible = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lblSaludo.Text = "";
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Text = "ADIU";
+            this.Close();
         }
     }
 }
