@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{E5BB1285-0542-47EF-93CF-B90EBDFA44AC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apostar_Dado/Tools/Dado.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apostar_Dado/Program.cs">
     <Files>
-      <File FileName="Apostar_Dado/Program.cs" Line="34" Column="13" />
-      <File FileName="Apostar_Dado/Tools/Dado.cs" Line="8" Column="10" />
+      <File FileName="Apostar_Dado/Program.cs" Line="60" Column="37" />
+      <File FileName="Apostar_Dado/Tools/Dado.cs" Line="10" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Apostar_Dado" expanded="True">
             <Node name="Apostar_Dado" expanded="True">
-              <Node name="Tools" expanded="True">
-                <Node name="Dado.cs" selected="True" />
-              </Node>
+              <Node name="Tools" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
