@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
   <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Elements/Tools/Credito.cs">
     <Files>
       <File FileName="Cajero/Program.cs" Line="285" Column="84" />
       <File FileName="Cajero/Elements/Usuarios/Activo.cs" Line="36" Column="42" />
@@ -20,10 +20,11 @@
               <Node name="Elements" expanded="True">
                 <Node name="Abstracts" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
-                <Node name="Tools" expanded="True" />
+                <Node name="Tools" expanded="True">
+                  <Node name="Credito.cs" selected="True" />
+                </Node>
                 <Node name="Usuarios" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="POO" expanded="True" />
           </Node>
