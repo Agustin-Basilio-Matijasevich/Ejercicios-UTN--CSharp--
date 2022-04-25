@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{270E6337-BBE0-44EE-8A47-F60B69B39C8B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calculo_Moda-Estadistica/Functions/ModaE.cs">
+    <Files>
+      <File FileName="Calculo_Moda-Estadistica/Program.cs" Line="1" Column="1" />
+      <File FileName="Calculo_Moda-Estadistica/Functions/ModaE.cs" Line="14" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Calculo_Moda-Estadistica" expanded="True">
+            <Node name="Calculo_Moda-Estadistica" expanded="True">
+              <Node name="Functions" expanded="True">
+                <Node name="ModaE.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Calculo__Moda-Estadistica FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
