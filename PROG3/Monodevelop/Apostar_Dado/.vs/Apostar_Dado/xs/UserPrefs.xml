@@ -1,15 +1,15 @@
-﻿<Properties StartupConfiguration="{E5BB1285-0542-47EF-93CF-B90EBDFA44AC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apostar_Dado/Program.cs">
+﻿<Properties StartupConfiguration="{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apostar_Dado_V2/Program.cs">
     <Files>
-      <File FileName="Apostar_Dado/Program.cs" Line="60" Column="37" />
-      <File FileName="Apostar_Dado/Tools/Dado.cs" Line="10" Column="41" />
+      <File FileName="Apostar_Dado_V2/Program.cs" Line="19" Column="13" />
+      <File FileName="Apostar_Dado_V2/Elements/Jugador.cs" Line="13" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Apostar_Dado" expanded="True">
-            <Node name="Apostar_Dado" expanded="True">
-              <Node name="Tools" expanded="True" />
+            <Node name="Apostar_Dado_V2" expanded="True">
+              <Node name="Elements" expanded="True" />
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -24,4 +24,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Apostar__Dado PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Apostar__Dado__V2 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
