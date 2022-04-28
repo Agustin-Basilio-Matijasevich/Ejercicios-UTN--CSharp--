@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -45,8 +46,20 @@ namespace Primer_App_Winforms_Framework
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Text = "ADIU";
             this.Close();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Size tam = new Size(1, 1);
+            this.Text = "Adiopue!!!";
+
+            for (int i = 0; i < this.Size.Height; i++)
+            {
+                this.Size = Size.Subtract(this.Size, tam);
+                Thread.Sleep(1);
+            }
+            
         }
     }
 }
