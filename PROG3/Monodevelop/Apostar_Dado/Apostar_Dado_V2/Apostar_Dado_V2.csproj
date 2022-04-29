@@ -35,6 +35,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Elements\Jugador.cs" />
+    <Compile Include="Elements\Juego.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apostar_Dado\Apostar_Dado.csproj">
