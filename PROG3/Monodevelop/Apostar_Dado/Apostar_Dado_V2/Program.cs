@@ -68,9 +68,9 @@ namespace Apostar_Dado_V2
             Console.Clear();
             Console.WriteLine("***Resultados de la Partida***\n\n");
 
-            Console.WriteLine($"Jugador {Jr1.GetNombre()}, Saldo Final: {Jr1.GetSaldo()}\n");
-            Console.WriteLine($"Jugador {Jr2.GetNombre()}, Saldo Final: {Jr2.GetSaldo()}\n");
-            Console.WriteLine($"Pozo Final: {Pozo}\n\n");
+            Console.WriteLine($"Jugador {Jr1.GetNombre()}, Saldo Final: ${Jr1.GetSaldo()}\n");
+            Console.WriteLine($"Jugador {Jr2.GetNombre()}, Saldo Final: ${Jr2.GetSaldo()}\n");
+            Console.WriteLine($"Pozo Final: ${Pozo}\n\n");
 
             if (Jr1.GetSaldo() > Jr2.GetSaldo())
             {
@@ -87,7 +87,7 @@ namespace Apostar_Dado_V2
 
         }
 
-        public static void CargaDatos(ref Jugador jugador)
+        private static void CargaDatos(ref Jugador jugador)
         {
 
             bool Aux;
@@ -115,6 +115,61 @@ namespace Apostar_Dado_V2
             }
 
             while(true)
+            {
+                string Ingreso; Ingreso = null;
+                double Iparse;
+
+                Console.Clear();
+                Console.WriteLine("***Bienvenido a la casa de Apuestas***\n\n");
+
+                Console.WriteLine($"Jugador {jugador.GetNombre()}.\n");
+                Console.WriteLine($"Usted tiene un saldo de: ${jugador.GetSaldo()}.\n");
+                Console.WriteLine("Ingrese ''todo'' para apostar todo su dinero.");
+                Console.WriteLine("Caso contrario ingrese la cantidad que quiere apostar.");
+
+                Ingreso = Console.ReadLine();
+
+                if (Ingreso.Equals("todo"))
+                {
+                    Console.WriteLine("Usted esta a punto de apostarlo todo.");
+                    Console.WriteLine("Presione S para Confirmar o cualquier otra tecla para Cancelar");
+
+                    if (ConsoleKey.S == Console.ReadKey().Key)
+                    {
+                        jugador.SetPlatAP(jugador.GetSaldo());
+                        break;
+                    }
+
+                }
+                else if (double.TryParse(Ingreso, out Iparse))
+                {
+                    if (Iparse < jugador.GetSaldo())
+                    {
+                        Console.WriteLine($"Usted esta a punto de apostar: ${Iparse}.");
+                        Console.WriteLine("Presione S para Confirmar o cualquier otra tecla para Cancelar");
+
+                        if (ConsoleKey.S == Console.ReadKey().Key)
+                        {
+                            jugador.SetPlatAP(Iparse);
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ingreso Invalido. Presione una tecla para continuar...");
+                        Console.ReadKey();
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Ingreso Invalido. Presione una tecla para continuar...");
+                    Console.ReadKey();
+                }
+
+            }
+
+            while (true)
             {
                 bool Flag = false;
 
@@ -163,7 +218,7 @@ namespace Apostar_Dado_V2
 
         }
 
-        public static void Saludo()
+        private static void Saludo()
         {
             Console.WriteLine("***Bienvenido a la casa de Apuestas***\n\n");
             Console.WriteLine("A continuacion se muestran las reglas:\n");

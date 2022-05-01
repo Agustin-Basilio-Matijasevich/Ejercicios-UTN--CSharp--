@@ -5,7 +5,7 @@ namespace Apostar_Dado_V2.Elements
     public class Jugador
     {
         private readonly String Nombre;
-        private double Saldo;
+        private double Saldo, PlatAP;
         private int NumAp, TipAp;
 
         public Jugador(String Nombre)
@@ -33,6 +33,11 @@ namespace Apostar_Dado_V2.Elements
             return TipAp;
         }
 
+        public double GetPlatAP()
+        {
+            return PlatAP;
+        }
+
         public string GetNombre()
         {
             return Nombre;
@@ -43,15 +48,18 @@ namespace Apostar_Dado_V2.Elements
             return Saldo;
         }
 
-        public void SetSaldo(double Saldo)
+        public void AddSaldo(double Saldo)
         {
-            if (Saldo < 0)
+            this.Saldo += Saldo;
+        }
+
+        public void SubSaldo(double Saldo)
+        {
+            this.Saldo -= Saldo;
+
+            if (this.Saldo < 0)
             {
                 this.Saldo = 0;
-            }
-            else
-            {
-                this.Saldo = Saldo;
             }
 
         }
@@ -82,6 +90,11 @@ namespace Apostar_Dado_V2.Elements
                 return false;
             }
 
+        }
+
+        public void SetPlatAP(double Plata)
+        {
+            PlatAP = Plata;
         }
 
     }
