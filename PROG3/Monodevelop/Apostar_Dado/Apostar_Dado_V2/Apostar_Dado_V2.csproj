@@ -38,9 +38,9 @@
     <Compile Include="Elements\Juego.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apostar_Dado\Apostar_Dado.csproj">
-      <Project>{E5BB1285-0542-47EF-93CF-B90EBDFA44AC}</Project>
-      <Name>Apostar_Dado</Name>
+    <ProjectReference Include="..\Dado_6-Caras\Dado_6-Caras.csproj">
+      <Project>{E1455538-6299-4032-A3B9-B3EAE9177F16}</Project>
+      <Name>Dado_6-Caras</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -85,6 +85,9 @@ namespace Apostar_Dado_V2
                 Console.WriteLine("***EMPATE***");
             }
 
+            Console.WriteLine("\n\nPresione una tecla para continuar...");
+            Console.ReadKey();
+
         }
 
         private static void CargaDatos(ref Jugador jugador)

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostar_Dado", "Apostar_Dad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apostar_Dado_V2", "Apostar_Dado_V2\Apostar_Dado_V2.csproj", "{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dado_6-Caras", "Dado_6-Caras\Dado_6-Caras.csproj", "{E1455538-6299-4032-A3B9-B3EAE9177F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}.Debug|x86.Build.0 = Debug|x86
 		{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}.Release|x86.ActiveCfg = Release|x86
 		{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}.Release|x86.Build.0 = Release|x86
+		{E1455538-6299-4032-A3B9-B3EAE9177F16}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1455538-6299-4032-A3B9-B3EAE9177F16}.Debug|x86.Build.0 = Debug|Any CPU
+		{E1455538-6299-4032-A3B9-B3EAE9177F16}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1455538-6299-4032-A3B9-B3EAE9177F16}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

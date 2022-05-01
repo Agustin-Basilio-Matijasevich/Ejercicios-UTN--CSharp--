@@ -1,5 +1,5 @@
 ﻿using System;
-using Apostar_Dado.Tools;
+using Dado_6Caras;
 
 namespace Apostar_Dado_V2.Elements
 {
