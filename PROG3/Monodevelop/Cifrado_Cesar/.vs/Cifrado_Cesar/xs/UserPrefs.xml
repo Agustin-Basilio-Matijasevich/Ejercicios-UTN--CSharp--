@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{1E2E43AA-5EB7-407E-9C78-8E141AA54BA5}|Default">
+  <MonoDevelop.Ide.ItemProperties.Cifrado PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cifrado_Cesar" expanded="True" selected="True">
+            <Node name="Cifrado" expanded="True" />
+            <Node name="Descifrado" expanded="True" />
+            <Node name="Librerias_Cesar" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.Descifrado PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
