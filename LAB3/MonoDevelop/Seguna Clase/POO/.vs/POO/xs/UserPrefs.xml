@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{B8EA2C08-C5C7-4F62-9242-887A7BEBEB5B}|Default">
   <MonoDevelop.Ide.ItemProperties.Cajero PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Elements/Tools/Credito.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cajero/Elements/Tools/IDCaj.cs">
     <Files>
       <File FileName="Cajero/Program.cs" Line="120" Column="5" />
       <File FileName="Cajero/Elements/Usuarios/Activo.cs" Line="20" Column="42" />
@@ -10,7 +10,7 @@
       <File FileName="Cajero/Elements/Interfaces/personaInterfase.cs" Line="13" Column="1" />
       <File FileName="Cajero/Elements/Tools/RegOP.cs" Line="41" Column="119" />
       <File FileName="Cajero/Elements/Tools/IDCaj.cs" Line="16" Column="53" />
-      <File FileName="Cajero/Elements/Tools/Credito.cs" Line="20" Column="45" />
+      <File FileName="Cajero/Elements/Tools/Credito.cs" Line="11" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +21,7 @@
                 <Node name="Abstracts" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Tools" expanded="True">
-                  <Node name="Credito.cs" selected="True" />
+                  <Node name="IDCaj.cs" selected="True" />
                 </Node>
                 <Node name="Usuarios" expanded="True" />
               </Node>
