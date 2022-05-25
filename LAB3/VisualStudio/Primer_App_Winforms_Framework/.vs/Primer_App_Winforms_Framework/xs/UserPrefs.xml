@@ -4,7 +4,11 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Primer_App_Winforms_Framework" expanded="True">
-            <Node name="Primer_App_Winforms_Framework" selected="True" />
+            <Node name="Primer_App_Winforms_Framework" expanded="True">
+              <Node name="Form1.cs" expanded="True">
+                <Node name="Form1.resx" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

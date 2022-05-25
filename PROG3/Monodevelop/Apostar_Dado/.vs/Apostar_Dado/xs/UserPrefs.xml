@@ -1,10 +1,16 @@
 ﻿<Properties StartupConfiguration="{E7C4B32C-7D41-4739-9B4B-B7B82A5F988B}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dado_6-Caras/Dado.cs">
+    <Files>
+      <File FileName="Dado_6-Caras/Dado.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Apostar_Dado" expanded="True">
             <Node name="Apostar_Dado_V2" expanded="True" />
+            <Node name="Dado_6-Caras" expanded="True">
+              <Node name="Dado.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
