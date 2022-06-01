@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{DC0561AE-C430-49CD-944A-3629CAAA7550}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Interfaces/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Interfaces/Libro.cs">
     <Files>
-      <File FileName="Interfaces/Program.cs" Line="19" Column="17" />
+      <File FileName="Interfaces/Program.cs" Line="19" Column="1" />
       <File FileName="Interfaces/IColeccionable.cs" Line="11" Column="26" />
-      <File FileName="Interfaces/IComparable.cs" Line="7" Column="9" />
-      <File FileName="Interfaces/Libro.cs" Line="28" Column="10" />
+      <File FileName="Interfaces/IComparable.cs" Line="7" Column="1" />
+      <File FileName="Interfaces/Libro.cs" Line="25" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Interfaces" expanded="True">
             <Node name="Interfaces" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Libro.cs" selected="True" />
             </Node>
           </Node>
         </State>
