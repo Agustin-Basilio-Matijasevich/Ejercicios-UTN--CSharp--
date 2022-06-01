@@ -8,13 +8,31 @@ namespace Interfaces
         private string autor, titulo;
 
         //Propiedades
-        public String Autor { get; set; }
+        public String Autor
+        {
+            get
+            {
+                return this.autor;
+            }
+            set
+            {
+                if (value.Length > 0)
+                {
+                    this.autor = value;
+                }
+                else
+                {
+                    this.autor = "NO NAME";
+                }
+            }
+        }
         public String Titulo { get; set; }
 
         //Metodos
-        public Libro()
+        public Libro(String Autor, String Titulo)
         {
-
+            this.Autor = Autor;
+            this.Titulo = Titulo;
         }
 
         public void CompareTo()
