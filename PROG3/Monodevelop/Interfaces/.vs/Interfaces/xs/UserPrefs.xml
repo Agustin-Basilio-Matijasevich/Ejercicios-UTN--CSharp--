@@ -4,7 +4,7 @@
       <File FileName="Interfaces/Program.cs" Line="19" Column="1" />
       <File FileName="Interfaces/IColeccionable.cs" Line="11" Column="26" />
       <File FileName="Interfaces/IComparable.cs" Line="7" Column="1" />
-      <File FileName="Interfaces/Libro.cs" Line="25" Column="44" />
+      <File FileName="Interfaces/Libro.cs" Line="29" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
